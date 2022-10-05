@@ -1,5 +1,9 @@
 import React from "react";
 import fotoFeli from "../../images-cv/felihome.png";
+import decoration from "../../images-cv/deco.svg";
+import Skills from "./Skills";
+import "./Home.css";
+
 const Home = () => {
   const networks = [
     {
@@ -19,7 +23,7 @@ const Home = () => {
     },
   ];
   return (
-    <section className="min-h-screen">
+    <section>
       <div className="p-10 py-10 text-center">
         <h2 className="py-2 text-5xl font-medium text-black dark:text-teal-400 md:text-6xl">
           Felipe Juaneda
@@ -51,6 +55,12 @@ const Home = () => {
         <div className="mx-auto mt-10 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 w-80 h-80 md:h-96 md:w-96 450:h-60 450:w-60">
           <img src={fotoFeli} alt="" />
         </div>
+      </div>
+      <div>
+        <Skills />
+      </div>
+      <div className="w-2/3 pt-5 m-auto">
+        <img src={decoration} alt="web developer" />
       </div>
     </section>
   );

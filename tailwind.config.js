@@ -7,7 +7,8 @@ module.exports = {
     extend: {  
       colors:{
         "blackRich":"#0C1618",
-        
+        "violetaPrincipal":"#6e07f3",
+        "celestePrincipal":"#5be9b9"
       },
       screens: {
         '1024': { 'raw': '(max-width: 1024px)' },

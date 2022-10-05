@@ -1,25 +1,49 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import curriculum from "../../images-cv/curriculum.pdf";
+import "./NavBar.css";
+
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const [scrollActive, setScrollActive] = useState(false);
   const Links = [
-    { name: "Inicio", link: "/" },
-    { name: "Sobre mi", link: "/" },
-    { name: "Proyectos", link: "/" },
-    { name: "Contacto", link: "/" },
+    { id: 1, name: "Inicio", link: "/" },
+    { id: 2, name: "Sobre mi", link: "/aboutme" },
+    { id: 3, name: "Proyectos", link: "/proyects" },
+    { id: 4, name: "Contacto", link: "/contact" },
   ];
 
+  let ubicacionActual = window.pageYOffset;
+  const effectScroll = () => {
+    let desplazamientoActual = window.pageYOffset;
+    if (ubicacionActual >= desplazamientoActual && window.scrollY > 0) {
+      setScrollActive(true);
+    } else {
+      setScrollActive(false);
+    }
+    ubicacionActual = desplazamientoActual;
+  };
+  window.addEventListener("scroll", effectScroll);
+
   return (
-    <div className="sticky top-0 left-0 w-full shadow-md">
+    <div
+      className={
+        scrollActive
+          ? "sticky top-0 left-0 z-50 w-full shadow-md transition-all duration-200 ease-linear"
+          : "top-[-64px]"
+      }
+    >
       <div className="items-center justify-between py-4 bg-white md:flex 1024:px-5 xl:px-10 px-7 768:py-2">
         <div className="flex items-center justify-between">
           <div
             className=" cursor-pointer flex items-center font-[Poppins] 
       text-gray-800"
           >
-            <span className="text-lg font-semibold font-notoFont">
-              Felipe Agustin Juaneda
-            </span>
+            <Link to={"/"}>
+              <span className="text-lg font-semibold border-b-2 font-notoFont border-celestePrincipal">
+                Felipe Agustin Juaneda
+              </span>
+            </Link>
           </div>
           <div onClick={() => setOpen(!open)} className=" md:hidden">
             <i
@@ -36,22 +60,24 @@ const Nav = () => {
         >
           {Links.map((link) => (
             <li
-              key={link.name}
+              key={link.id}
               className="text-base md:ml-6 md:my-0 my-7 900:text-base"
             >
-              <a
-                href={link.link}
+              <NavLink
+                to={link.link}
                 onClick={() => setOpen(false)}
-                className="text-gray-800 duration-500 hover:text-gray-400"
+                activeclassname="active"
+                className="duration-500 navLink text-blackRich hover:underline hover:text-gray-600 "
+                end
               >
                 {link.name}
-              </a>
+              </NavLink>
             </li>
           ))}
           <a
             href={curriculum}
             download={"Curriculim Felipe Juaneda"}
-            className="px-6 py-2 text-white duration-500 bg-indigo-600 rounded md:ml-8 hover:bg-indigo-400 font-notoFont"
+            className="px-6 py-2 text-white duration-500 rounded bg-violetaPrincipal md:ml-8 hover:bg-violet-600 font-notoFont"
           >
             Descargar Cv
           </a>

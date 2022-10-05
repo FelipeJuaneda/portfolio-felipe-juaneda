@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Peliculed",
+    "lenguajes": "React Js",
+    "bgImg": "url('./imgProyect/pagePeliculas.png')",
+    "to": "https://desafio-react-pi.vercel.app/popularFilms"
+  },
+  {
+    "id": 2,
+    "title": "Heladeria Artesanal",
+    "lenguajes": "React Js, Firebase",
+    "bgImg": "url('./imgProyect/pageHelados.png')",
+    "to": "https://primer-app.vercel.app/"
+  },
+  {
+    "id": 3,
+    "title": "Viajes FM",
+    "lenguajes": "Javascript",
+    "bgImg": "url('./imgProyect/pageViajes.png')",
+    "to": "https://felipejuaneda.github.io/paginaViajes/"
+  },
+  {
+    "id": 4,
+    "title": "Paseo Colonial",
+    "lenguajes": "Javascript",
+    "bgImg": "url('./imgProyect/pageGaleria.png')",
+    "to": "https://felipejuaneda.github.io/proyecto-final/"
+  }
+]

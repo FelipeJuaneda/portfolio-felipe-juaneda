@@ -1,0 +1,7 @@
+.skillName {
+  opacity: 0;
+}
+
+.skillName:hover {
+  opacity: 1;
+}
