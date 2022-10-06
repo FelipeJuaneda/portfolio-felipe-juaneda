@@ -28,24 +28,30 @@
   },
   {
     "id": 9,
+    "name": "GIT",
+    "img": "https://i.ibb.co/b1rypLZ/gitLogo.png",
+    "alt": "logo git"
+  },
+  {
+    "id": 10,
     "name": "Github",
     "img": "https://i.ibb.co/2M7gr7z/github-Logo.png",
     "alt": "logo github"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Firebase",
     "img": "https://i.ibb.co/9wzNkcR/firebase-Logo.png",
     "alt": "logo firebase"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Tailwind",
     "img": "https://i.ibb.co/Bts3NGz/tailwind-Logo.png",
     "alt": "logo tailwind"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Bootstrap",
     "img": "https://i.ibb.co/23VD0X3/bootstrap-Logo.png",
     "alt": "logo bootstrap"

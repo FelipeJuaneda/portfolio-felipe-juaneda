@@ -19,22 +19,25 @@ const Contact = () => {
       to: "https://github.com/FelipeJuaneda",
     },
   ];
-  
+
   const contacts = [
     {
       key: "direc",
       iClassName: "mx-2 text-2xl text-white ri-map-pin-line",
       value: "Belgrano 773, Cordoba, Argentina",
+      to: "https://www.google.com/maps/place/Belgrano+773,+C%C3%B3rdoba/@-31.4238735,-64.1919614,17z/data=!3m1!4b1!4m5!3m4!1s0x9432a28633a360b5:0x941372e4f44cc230!8m2!3d-31.4238735!4d-64.1919614",
     },
     {
       key: "number",
       iClassName: "mx-2 text-2xl text-white ri-phone-line",
       value: "(266) 563-7401",
+      to: "tel:+542664319381",
     },
     {
       key: "mal",
       iClassName: "mx-2 text-2xl text-white ri-mail-line",
       value: "felipejua9@gmail.com",
+      to: "mailto:felipejua9@gmail.com",
     },
   ];
   return (
@@ -52,9 +55,12 @@ const Contact = () => {
                   return (
                     <p key={e.key} className="flex items-center -mx-2">
                       <i className={e.iClassName} />
-                      <span className="mx-2 text-white truncate w-72 font-notoFont">
+                      <a
+                        href={e.to}
+                        className="mx-2 text-white truncate w-72 font-notoFont"
+                      >
                         {e.value}
-                      </span>
+                      </a>
                     </p>
                   );
                 })}
@@ -117,7 +123,7 @@ const Contact = () => {
                     <textarea
                       className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                       placeholder="Mensaje"
-                    ></textarea>
+                    />
                   </div>
 
                   <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform rounded-md bg-violetaPrincipal hover:bg-blue-500 focus:outline-none focus:ring focus:bg-celestePrincipal focus:ring-opacity-50">

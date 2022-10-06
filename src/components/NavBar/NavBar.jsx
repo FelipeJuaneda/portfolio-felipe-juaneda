@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import curriculum from "../../images-cv/curriculum.pdf";
 import "./NavBar.css";
+import { animateScroll as scroll } from "react-scroll";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -65,7 +66,10 @@ const Nav = () => {
             >
               <NavLink
                 to={link.link}
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  setOpen(false);
+                  scroll.scrollToTop();
+                }}
                 activeclassname="active"
                 className="navLink text-blackRich hover:border-b-2 hover:border-celestePrincipal "
                 end
