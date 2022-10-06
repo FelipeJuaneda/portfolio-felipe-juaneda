@@ -10,15 +10,31 @@ const Contact = () => {
     },
     {
       key: 2,
-
       iclass: "ri-github-fill",
       to: "https://github.com/FelipeJuaneda",
     },
     {
       key: 3,
-
       iclass: "ri-instagram-fill",
       to: "https://github.com/FelipeJuaneda",
+    },
+  ];
+  
+  const contacts = [
+    {
+      key: "direc",
+      iClassName: "mx-2 text-2xl text-white ri-map-pin-line",
+      value: "Belgrano 773, Cordoba, Argentina",
+    },
+    {
+      key: "number",
+      iClassName: "mx-2 text-2xl text-white ri-phone-line",
+      value: "(266) 563-7401",
+    },
+    {
+      key: "mal",
+      iClassName: "mx-2 text-2xl text-white ri-mail-line",
+      value: "felipejua9@gmail.com",
     },
   ];
   return (
@@ -32,30 +48,16 @@ const Contact = () => {
               </h1>
 
               <div className="mt-6 space-y-8 md:mt-8">
-                <p className="flex items-start -mx-2">
-                  {/* className="w-6 h-6 mx-2 text-white" */}
-
-                  <i className="mx-2 text-2xl text-white ri-map-pin-line" />
-                  <span className="mx-2 text-white truncate w-72 font-notoFont">
-                    Belgrano 773, Cordoba, Argentina
-                  </span>
-                </p>
-
-                <p className="flex items-start -mx-2">
-                  <i className="mx-2 text-2xl text-white ri-phone-line" />
-
-                  <span className="mx-2 text-white truncate w-72 font-notoFont">
-                    (266) 563-7401
-                  </span>
-                </p>
-
-                <p className="flex items-start -mx-2">
-                  <i className="mx-2 text-2xl text-white ri-mail-line" />
-
-                  <span className="mx-2 text-white truncate w-72 font-notoFont">
-                    felipejua9@gmail.com
-                  </span>
-                </p>
+                {contacts.map((e) => {
+                  return (
+                    <p key={e.key} className="flex items-center -mx-2">
+                      <i className={e.iClassName} />
+                      <span className="mx-2 text-white truncate w-72 font-notoFont">
+                        {e.value}
+                      </span>
+                    </p>
+                  );
+                })}
               </div>
 
               <div className="mt-6 md:mt-8">

@@ -1,3 +1,4 @@
 .navLink.active {
-  text-decoration: underline solid 1px;
+  border-bottom-width: 2px;
+  border-color: #5be9b9;
 }

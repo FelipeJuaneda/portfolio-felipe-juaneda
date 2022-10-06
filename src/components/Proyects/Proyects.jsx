@@ -23,12 +23,12 @@ const Proyects = () => {
       <section className="bg-violetaPrincipal ">
         <div className="mx-auto py-14">
           <div className="pb-9">
-            <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+            <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl">
               Proyectos
             </h1>
 
-            <p className="mt-4 text-center text-gray-500 dark:text-gray-300">
-              Algunos de los proyectos que mas me gustan! Click para entrar!😉
+            <p className="mt-4 text-center text-white ">
+              Algunos de mis proyectos que mas me gustan! Click para entrar!😉
             </p>
           </div>
           <ProyectsSwiper>

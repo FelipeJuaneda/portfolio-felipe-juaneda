@@ -11,10 +11,12 @@ const SkillsSwiper = ({ children }) => {
   return (
     <Swiper
       grabCursor={false}
+      slidesPerGroup={3}
       autoplay={{
-        delay: 1200,
+        delay: 1000,
         disableOnInteraction: false,
       }}
+      speed={6000}
       freeMode={{
         enabled: true,
       }}
@@ -27,7 +29,6 @@ const SkillsSwiper = ({ children }) => {
         },
         350: {
           slidesPerView: 3.5,
-
           spaceBetween: 15,
         },
         500: {

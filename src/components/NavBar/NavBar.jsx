@@ -67,7 +67,7 @@ const Nav = () => {
                 to={link.link}
                 onClick={() => setOpen(false)}
                 activeclassname="active"
-                className="duration-500 navLink text-blackRich hover:underline hover:text-gray-600 "
+                className="navLink text-blackRich hover:border-b-2 hover:border-celestePrincipal "
                 end
               >
                 {link.name}
