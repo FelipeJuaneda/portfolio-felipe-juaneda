@@ -30,7 +30,7 @@ const Nav = () => {
     <div
       className={
         scrollActive
-          ? "sticky top-0 left-0 z-50 w-full shadow-md transition-all duration-200 ease-linear"
+          ? "sticky top-0 left-0 z-50 w-full shadow-md transition-all duration-150 ease-linear"
           : "top-[-64px]"
       }
     >

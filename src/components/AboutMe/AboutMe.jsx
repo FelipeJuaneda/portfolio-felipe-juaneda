@@ -1,7 +1,11 @@
 import React from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import fotoFeli from "../../images-cv/felihome.png";
+import Education from "../EduExp/Education";
+import Skills from "../Home/Skills";
 
 const AboutMe = () => {
+  const location = useLocation();
   const networks = [
     {
       key: 1,
@@ -21,7 +25,7 @@ const AboutMe = () => {
   ];
   return (
     <div className="p-10 py-10 text-center">
-      <h2 className="py-2 text-5xl font-medium text-black dark:text-teal-400 md:text-6xl">
+      <h2 className="py-2 text-5xl font-medium text-teal-400 md:text-6xl">
         Felipe Juaneda
       </h2>
       <h3 className="py-2 text-2xl text-blackRich md:text-3xl">
@@ -48,9 +52,35 @@ const AboutMe = () => {
           );
         })}
       </div>
+
       <div className="mx-auto mt-10 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 w-80 h-80 md:h-96 md:w-96 450:h-60 450:w-60">
         <img src={fotoFeli} alt="" />
       </div>
+
+      <Skills />
+
+      <div>
+        <div className="flex items-center justify-center gap-14 1024:gap-7 768">
+          <Link
+            to={"education"}
+            type="button"
+            className="px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-indigo-600 rounded-lg shadow-md w-96 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
+          >
+            Educacion
+          </Link>
+          <Link
+            to={"experience"}
+            type="button"
+            className="px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-indigo-600 rounded-lg shadow-md w-96 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 "
+          >
+            Experiencia
+          </Link>
+        </div>
+        <Outlet />
+      </div>
+      {location.pathname === "/" || location.pathname === "/aboutme" ? (
+        <Education />
+      ) : null}
     </div>
   );
 };

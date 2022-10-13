@@ -5,22 +5,19 @@ import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
-import { Autoplay, FreeMode, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 
 const SkillsSwiper = ({ children }) => {
   return (
     <Swiper
-      grabCursor={false}
       slidesPerGroup={9}
+      allowTouchMove={false}
       autoplay={{
         delay: 500,
         disableOnInteraction: false,
       }}
       speed={7000}
-      freeMode={{
-        enabled: true,
-      }}
-      modules={[Navigation, Autoplay, FreeMode]}
+      modules={[Navigation, Autoplay]}
       navigation={false}
       breakpoints={{
         0: {

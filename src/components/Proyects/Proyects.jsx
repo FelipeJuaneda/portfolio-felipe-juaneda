@@ -4,7 +4,7 @@ import ProyectsSwiper from "../SwiperCarousel/ProyectsSwiper";
 
 const Proyects = () => {
   const [proyects, setProyects] = useState([]);
-  console.log(proyects);
+  
   const getProyectsData = async () => {
     try {
       const dataProyects = await fetch("/data/proyectsData.json");
@@ -23,7 +23,7 @@ const Proyects = () => {
       <section className="bg-violetaPrincipal ">
         <div className="mx-auto py-14">
           <div className="pb-9">
-            <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl">
+            <h1 className="text-3xl font-semibold text-center capitalize text-blackRich lg:text-4xl">
               Proyectos
             </h1>
 
