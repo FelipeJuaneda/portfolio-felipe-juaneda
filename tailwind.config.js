@@ -11,6 +11,7 @@ module.exports = {
         "celestePrincipal":"#5be9b9"
       },
       screens: {
+        '1280': { 'raw': '(max-width: 1280px)' },
         '1024': { 'raw': '(max-width: 1024px)' },
         '900': { 'raw': '(max-width: 900px)' },
         '768': { 'raw': '(max-width: 768px)' },

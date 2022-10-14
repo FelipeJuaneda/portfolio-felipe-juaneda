@@ -24,7 +24,7 @@ const AboutMe = () => {
     },
   ];
   return (
-    <div className="p-10 py-10 text-center">
+    <div className="p-0 py-10 text-center sm:p-10">
       <h2 className="py-2 text-5xl font-medium text-teal-400 md:text-6xl">
         Felipe Juaneda
       </h2>
@@ -60,18 +60,18 @@ const AboutMe = () => {
       <Skills />
 
       <div>
-        <div className="flex items-center justify-center gap-14 1024:gap-7 768">
+        <div className="flex items-center justify-center gap-3 px-3 md:gap-8 lg:gap-14">
           <Link
             to={"education"}
             type="button"
-            className="px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-indigo-600 rounded-lg shadow-md w-96 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
+            className="px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in rounded-lg shadow-md bg-violetaPrincipal w-96 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
           >
             Educacion
           </Link>
           <Link
             to={"experience"}
             type="button"
-            className="px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-indigo-600 rounded-lg shadow-md w-96 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 "
+            className="px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in rounded-lg shadow-md bg-violetaPrincipal w-96 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 "
           >
             Experiencia
           </Link>
