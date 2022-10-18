@@ -31,7 +31,7 @@ const Contact = () => {
     {
       key: "number",
       iClassName: "mx-2 text-2xl text-white ri-phone-line",
-      value: "(266) 563-7401",
+      value: "+542664319381",
       to: "tel:+542664319381",
     },
     {
@@ -58,6 +58,8 @@ const Contact = () => {
                       <i className={e.iClassName} />
                       <a
                         href={e.to}
+                        target="_blank"
+                        rel="noreferrer"
                         className="mx-2 text-white truncate w-72 font-notoFont"
                       >
                         {e.value}

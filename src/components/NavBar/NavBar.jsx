@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import curriculum from "../../images-cv/curriculum.pdf";
 import "./NavBar.css";
 import { animateScroll as scroll } from "react-scroll";
+import ScrollProgressBar from "../ScrollProgressBar/ScrollProgressBar";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -31,9 +32,11 @@ const Nav = () => {
       className={
         scrollActive
           ? "sticky top-0 left-0 z-50 w-full shadow-md transition-all duration-150 ease-linear"
-          : "top-[-64px]"
+          : "top-[-68px]  transition-all duration-150 ease-linear sticky"
       }
     >
+      <ScrollProgressBar />
+
       <div className="items-center justify-between py-4 bg-white md:flex 1024:px-5 xl:px-10 px-7 768:py-2">
         <div className="flex items-center justify-between">
           <div

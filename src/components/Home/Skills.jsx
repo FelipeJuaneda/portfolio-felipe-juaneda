@@ -35,7 +35,7 @@ const Skills = () => {
                   src={logo.img}
                   alt={logo.alt}
                 />
-                <span className="transition-opacity duration-200 opacity-0  skillName group-hover:opacity-100 font-notoFont">
+                <span className="transition-opacity duration-200 opacity-0 skillName group-hover:opacity-100 font-notoFont">
                   {logo.name}
                 </span>
               </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import decoration from "../../images-cv/deco.svg";
-import "./Home.css";
 import AboutMe from "../AboutMe/AboutMe";
 
 const Home = () => {
