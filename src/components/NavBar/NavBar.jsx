@@ -32,7 +32,7 @@ const Nav = () => {
       className={
         scrollActive
           ? "sticky top-0 left-0 z-50 w-full shadow-md transition-all duration-150 ease-linear"
-          : "top-[-68px]  transition-all duration-150 ease-linear sticky"
+          : "top-[-68px] z-50 transition-all duration-150 ease-linear sticky"
       }
     >
       <ScrollProgressBar />
