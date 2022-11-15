@@ -20,7 +20,7 @@ const Skills = () => {
   return (
     <div className="py-20 ">
       <div className="mb-5 text-center ">
-        <span className="text-3xl text-blackRich md:text-3xl font-notoFont">
+        <span className="text-3xl border-b-2 dark:text-white text-blackRich md:text-3xl font-notoFont border-celestePrincipal">
           Skills
         </span>
       </div>
@@ -35,7 +35,7 @@ const Skills = () => {
                   src={logo.img}
                   alt={logo.alt}
                 />
-                <span className="transition-opacity duration-200 opacity-0 skillName group-hover:opacity-100 font-notoFont">
+                <span className="text-base transition-opacity duration-200 opacity-0 skillName group-hover:opacity-100 font-notoFont dark:text-white">
                   {logo.name}
                 </span>
               </div>

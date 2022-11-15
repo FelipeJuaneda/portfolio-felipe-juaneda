@@ -4,7 +4,7 @@ import infoExp from "./experienceData";
 const Experience = () => {
   return (
     <div className="mt-9">
-      <span className="text-4xl font-medium border-b-2 text-blackRich border-celestePrincipal">
+      <span className="text-4xl font-medium border-b-2 text-blackRich dark:text-white border-celestePrincipal">
         Experiencia
       </span>
       <div className="flex-wrap items-center justify-center gap-4 text-center md:flex xl:flex-nowrap ">

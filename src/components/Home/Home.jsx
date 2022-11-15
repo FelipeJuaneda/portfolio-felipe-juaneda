@@ -4,7 +4,7 @@ import AboutMe from "../AboutMe/AboutMe";
 
 const Home = () => {
   return (
-    <section>
+    <section className="dark:bg-blackRich">
       <AboutMe />
       <div className="w-2/3 pt-5 m-auto 580:w-11/12">
         <img src={decoration} alt="web developer" />

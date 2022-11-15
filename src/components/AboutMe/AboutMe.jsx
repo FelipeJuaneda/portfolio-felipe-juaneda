@@ -2,7 +2,7 @@ import React from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import fotoFeli from "../../images-cv/felihome.png";
 import Education from "../EduExp/Education";
-import Skills from "../Home/Skills";
+import Skills from "../Skills/Skills";
 
 const AboutMe = () => {
   const location = useLocation();
@@ -28,10 +28,10 @@ const AboutMe = () => {
       <h2 className="py-2 text-5xl font-medium text-teal-400 md:text-6xl">
         Felipe Juaneda
       </h2>
-      <h3 className="py-2 text-2xl text-blackRich md:text-3xl">
+      <h3 className="py-2 text-2xl text-blackRich md:text-3xl dark:text-white">
         Desarrollador FrontEnd
       </h3>
-      <p className="max-w-xl py-5 mx-auto leading-8 text-blackRich text-md md:text-xl font-notoFont">
+      <p className="max-w-xl py-5 mx-auto leading-8 text-blackRich dark:text-white text-md md:text-xl font-notoFont">
         Soy Felipe Agustín Juaneda, de 21 años, Argentino residente en Córdoba.
         Actualmente estudiando Programación Full Stack 👨‍🎓, trabajando de Tutor
         en CoderHouse, y creciendo en este mundo tecnológico que tanto me

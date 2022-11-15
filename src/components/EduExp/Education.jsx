@@ -4,7 +4,7 @@ import infoEdu from "./educationData";
 const Education = () => {
   return (
     <div className="my-9">
-      <span className="text-4xl font-medium border-b-2 text-blackRich border-celestePrincipal">
+      <span className="text-4xl font-medium border-b-2 text-blackRich border-celestePrincipal dark:text-white">
         Educación
       </span>
       <div className="flex-wrap items-center justify-center gap-4 text-center md:flex xl:flex-nowrap ">
