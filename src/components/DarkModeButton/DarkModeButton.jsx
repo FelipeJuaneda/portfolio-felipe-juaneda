@@ -15,7 +15,10 @@ const DarkModeButton = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
   return (
-    <button className="p-1 text-xl " onClick={handleThemeSwitch}>
+    <button
+      className="p-1 text-xl 910max:absolute 910max:right-5 910max:top-5"
+      onClick={handleThemeSwitch}
+    >
       <i
         className={
           theme === "light" ? `ri-moon-fill` : "ri-sun-line text-white"
