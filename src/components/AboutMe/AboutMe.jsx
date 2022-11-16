@@ -24,7 +24,7 @@ const AboutMe = () => {
     },
   ];
   return (
-    <div className="p-0 py-10 text-center sm:p-10">
+    <div className="p-0 py-10 text-center bg-white sm:p-10 dark:bg-blackRich">
       <h2 className="py-2 text-5xl font-medium text-teal-400 md:text-6xl">
         Felipe Juaneda
       </h2>
