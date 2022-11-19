@@ -59,7 +59,7 @@ const Nav = () => {
           </div>
         </div>
         <ul
-          className={`910:flex shadow-md 910:items-center 910:pb-0 pb-12 absolute font-notoFont 910:static bg-white dark:bg-blackRich 910:z-auto z-50 left-0 w-full 910:w-auto 910:pl-0 pl-9 ${
+          className={`910:flex 910max:shadow-md 910:items-center 910:pb-0 pb-12 absolute font-notoFont 910:static bg-white dark:bg-blackRich 910:z-auto z-50 left-0 w-full 910:w-auto 910:pl-0 pl-9 ${
             open ? "top-[50px] " : "top-[-490px]"
           }`}
         >
