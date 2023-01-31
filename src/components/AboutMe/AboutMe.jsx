@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import fotoFeli from "../../images-cv/felihome.png";
-import Education from "../EduExp/Education";
+import Education from "../EduExp/Education/Education";
 import Skills from "../Skills/Skills";
 
 const AboutMe = () => {

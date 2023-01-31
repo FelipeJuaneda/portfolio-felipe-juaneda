@@ -22,6 +22,7 @@ module.exports = {
         '580': { 'raw': '(max-width: 580px)' },
         '550': { 'raw': '(max-width: 550px)' },
         '450': { 'raw': '(max-width: 450px)' },
+        '768Min':{'raw': '(min-width: 768px)'},
 
       }
     },

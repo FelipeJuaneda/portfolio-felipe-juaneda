@@ -30,12 +30,12 @@ const Skills = () => {
             <SwiperSlide className="select-none" key={logo.id}>
               <div className="flex flex-col items-center justify-center w-full text-center group">
                 <img
-                  className="skillImg object-contain w-28 h-28 grayscale-[90%] group-hover:grayscale-0 transition-all duration-200"
+                  className="skillImg object-contain w-28 h-28 768Min:grayscale-[90%] group-hover:grayscale-0 transition-all duration-200"
                   id="skillImg"
                   src={logo.img}
                   alt={logo.alt}
                 />
-                <span className="text-base transition-opacity duration-200 opacity-0 skillName group-hover:opacity-100 font-notoFont dark:text-white">
+                <span className="text-base transition-opacity duration-200 768Min:opacity-0 skillName group-hover:opacity-100 font-notoFont dark:text-white">
                   {logo.name}
                 </span>
               </div>

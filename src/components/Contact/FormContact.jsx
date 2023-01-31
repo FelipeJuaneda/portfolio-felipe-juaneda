@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { Toaster, toast } from "react-hot-toast";
+import { useState } from "react";
 
 const FormContact = () => {
+  const [sendInfo, setSendInfo] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -11,9 +15,31 @@ const FormContact = () => {
         e.target,
         "vdb5zp0CqPR0oGTss"
       )
-      .then((response) => console.log(response))
+      .then((response) => {
+        if (response.status === 200) {
+          setSendInfo(true);
+        }
+        console.log(response);
+      })
       .catch((error) => console.log(error));
   };
+
+  const toastFunction = () => {
+    toast.success("¡Gracias por contactar!", {
+      position: "bottom-center",
+      style: {
+        background: "#6e07f3",
+        fontFamily: "'Raleway', sans-serif",
+        color: "#f3f4f6",
+      },
+    });
+  };
+
+  useEffect(() => {
+    if (sendInfo) {
+      toastFunction();
+    }
+  }, [sendInfo]);
 
   return (
     <div className="mt-8 lg:w-1/2 lg:mx-6">
@@ -40,6 +66,7 @@ const FormContact = () => {
               Email
             </label>
             <input
+              required
               name="user-email"
               type="email"
               placeholder="ejemplo@example.com"
@@ -52,6 +79,7 @@ const FormContact = () => {
               Mensaje
             </label>
             <textarea
+              required
               name="user-message"
               className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
               placeholder="Mensaje"
@@ -59,8 +87,9 @@ const FormContact = () => {
           </div>
 
           <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform rounded-md bg-violetaPrincipal hover:bg-blue-500 focus:outline-none focus:ring focus:bg-celestePrincipal focus:ring-opacity-50">
-            Enviar!
+            {sendInfo ? "¡Enviado con exito!" : "¡Enviar!"}
           </button>
+          <Toaster />
         </form>
       </div>
     </div>

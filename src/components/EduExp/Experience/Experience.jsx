@@ -10,7 +10,7 @@ const Experience = () => {
       <div className="flex-wrap items-center justify-center gap-4 text-center md:flex xl:flex-nowrap ">
         {infoExp.map((data) => {
           return (
-            <div key={data.id} className={data.divFatherClass}>
+            <div key={data.id} className={data.classNameFather}>
               <a href={data.link} target="_blank" rel="noreferrer">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center w-12 h-12 mx-auto text-white rounded-md">
@@ -22,7 +22,7 @@ const Experience = () => {
                 </h3>
                 <h4 className="text-gray-400">{data.duration}</h4>
                 <h5 className="text-gray-400">{data.subtitle}</h5>
-                <p className="py-4 text-white text-md font-notoFont">
+                <p className="py-4 text-white text-md font-notoFont 768:text-sm">
                   {data.description}
                 </p>
               </a>
