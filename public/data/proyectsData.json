@@ -4,7 +4,7 @@
     "title": "Peliculed",
     "lenguajes": "React Js",
     "bgImg": "url('./imgProyect/pagePeliculas.png')",
-    "to": "https://desafio-react-pi.vercel.app/popularFilms"
+    "to": "https://desafio-react-pi.vercel.app/"
   },
   {
     "id": 2,
