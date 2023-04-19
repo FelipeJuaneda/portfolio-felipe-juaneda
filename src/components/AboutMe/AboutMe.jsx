@@ -32,7 +32,7 @@ const AboutMe = () => {
         Desarrollador FrontEnd
       </h3>
       <p className="max-w-xl py-5 mx-auto leading-8 text-blackRich dark:text-white text-md md:text-xl font-notoFont">
-        Soy Felipe Agustín Juaneda, de 21 años, Argentino residente en Córdoba.
+        Soy Felipe Agustín Juaneda, de 22 años, Argentino residente en Córdoba.
         Actualmente estudiando Programación Full Stack 👨‍🎓, trabajando de Tutor
         en CoderHouse, y creciendo en este mundo tecnológico que tanto me
         apasiona.
