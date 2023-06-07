@@ -1,28 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Toaster, toast } from "react-hot-toast";
-import { useState } from "react";
 
 const FormContact = () => {
-  const [sendInfo, setSendInfo] = useState(false);
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_t9329tl",
-        "template_0vi6msd",
-        e.target,
-        "vdb5zp0CqPR0oGTss"
-      )
-      .then((response) => {
-        if (response.status === 200) {
-          setSendInfo(true);
-        }
-        console.log(response);
-      })
-      .catch((error) => console.log(error));
-  };
+  const form = useRef();
 
   const toastFunction = () => {
     toast.success("¡Gracias por contactar!", {
@@ -35,14 +16,26 @@ const FormContact = () => {
     });
   };
 
-  useEffect(() => {
-    if (sendInfo) {
-      toastFunction();
-    }
-  }, [sendInfo]);
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_t9329tl",
+        "template_0vi6msd",
+        e.target,
+        "vdb5zp0CqPR0oGTss"
+      )
+      .then((response) => {
+        if (response.status === 200) {
+          toastFunction();
+        }
+        console.log(response);
+      })
+      .catch((error) => console.log(error));
+  };
 
   return (
-    <div className="mt-8 lg:w-1/2 lg:mx-6">
+    <div ref={form} className="mt-8 lg:w-1/2 lg:mx-6">
       <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
         <h1 className="text-2xl font-medium text-gray-700 font-notoFont dark:text-gray-200">
           Enviame un mensaje!
@@ -87,7 +80,7 @@ const FormContact = () => {
           </div>
 
           <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform rounded-md bg-violetaPrincipal hover:bg-blue-500 focus:outline-none focus:ring focus:bg-celestePrincipal focus:ring-opacity-50">
-            {sendInfo ? "¡Enviado con exito!" : "¡Enviar!"}
+            ¡Enviar!
           </button>
           <Toaster />
         </form>

@@ -4,18 +4,9 @@ const DarkModeButton = () => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "system"
   );
+
   const element = document.documentElement;
   const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-  useEffect(() => {
-    if (theme === "dark") {
-      element.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      element.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [element, theme]);
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -32,6 +23,17 @@ const DarkModeButton = () => {
     }
   }
   onWindowMatch();
+
+  useEffect(() => {
+    if (theme === "dark") {
+      element.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      element.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [element, theme]);
+
   return (
     <button
       className="p-1 text-xl 910max:absolute 910max:right-5 910max:top-5"
@@ -39,7 +41,9 @@ const DarkModeButton = () => {
     >
       <i
         className={
-          theme === "light" ? `ri-moon-fill` : "ri-sun-line text-white"
+          theme === "light" || theme === "system"
+            ? "ri-moon-fill "
+            : "ri-sun-line text-white"
         }
       />
     </button>
