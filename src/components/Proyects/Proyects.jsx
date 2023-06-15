@@ -38,7 +38,7 @@ const Proyects = () => {
                     <SwiperSlide key={proyect.id} className="select-none">
                       <a href={proyect.to} target="_blank" rel="noreferrer">
                         <div
-                          className="overflow-hidden rounded-lg cursor-pointer h-72 group 900:h-80 900:w-80 bg-contain bg-no-repeat bg-center"
+                          className="overflow-hidden rounded-lg cursor-pointer h-72 group 900:h-80 900:w-80 bg-cover bg-no-repeat bg-center"
                           style={{ backgroundImage: proyect.bgImg }}
                         >
                           <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
