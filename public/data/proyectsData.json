@@ -3,28 +3,28 @@
     "id": 1,
     "title": "Peliculed",
     "lenguajes": "React Js",
-    "bgImg": "url('./imgProyect/pagePeliculas.png')",
+    "bgImg": "url('./imgProyect/mockupPeliculed.jpeg')",
     "to": "https://desafio-react-pi.vercel.app/"
   },
   {
     "id": 2,
     "title": "Heladeria Artesanal",
     "lenguajes": "React Js, Firebase",
-    "bgImg": "url('./imgProyect/pageHelados.png')",
+    "bgImg": "url('./imgProyect/mockupHelados.jpeg')",
     "to": "https://primer-app.vercel.app/"
   },
   {
     "id": 3,
     "title": "Viajes FM",
     "lenguajes": "Javascript",
-    "bgImg": "url('./imgProyect/pageViajes.png')",
+    "bgImg": "url('./imgProyect/mockupViajes.jpeg')",
     "to": "https://felipejuaneda.github.io/paginaViajes/"
   },
   {
     "id": 4,
     "title": "Paseo Colonial",
     "lenguajes": "Javascript",
-    "bgImg": "url('./imgProyect/pageGaleria.png')",
+    "bgImg": "url('./imgProyect/mockupColonial.jpeg')",
     "to": "https://felipejuaneda.github.io/proyecto-final/"
   }
 ]

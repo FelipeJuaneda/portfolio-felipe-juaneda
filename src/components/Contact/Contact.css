@@ -1,9 +1,0 @@
-#gradiantSection {
-  background: rgb(110, 7, 243);
-  background: linear-gradient(
-    180deg,
-    rgba(110, 7, 243, 1) 38%,
-    rgba(103, 87, 222, 1) 72%,
-    rgba(91, 233, 185, 1) 100%
-  );
-}
