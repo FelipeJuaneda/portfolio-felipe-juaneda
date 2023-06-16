@@ -47,9 +47,9 @@ const Contact = () => {
 
   return (
     <section className="min-h-screen" style={sectionStyle}>
-      <div className="container flex flex-col min-h-screen px-6 py-12 mx-auto">
+      <div className="container flex flex-col min-h-screen px-6 py-12 mx-auto 550:px-0 550:py-3">
         <div className="flex-1 w-full m-auto lg:flex lg:items-center">
-          <div className="text-white lg:w-1/2 lg:mx-6">
+          <div className="text-white lg:w-1/2 lg:mx-6 550:px-6">
             <h1 className="text-3xl font-semibold capitalize lg:text-5xl font-notoFont">
               Contactos!
             </h1>
@@ -71,9 +71,7 @@ const Contact = () => {
             </div>
 
             <div className="mt-6 md:mt-8">
-              <h3 className="text-gray-300 font-notoFont">Seguime!</h3>
-
-              <div className="flex mt-4 -mx-1.5">
+              <div className="flex mt-4 -mx-1.5 gap-4 550:justify-evenly">
                 {networks.map((network) => (
                   <a
                     key={network.id}

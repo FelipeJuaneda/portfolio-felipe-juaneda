@@ -1,13 +1,13 @@
 import React from "react";
 import { Swiper } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FreeMode, Navigation, Pagination } from "swiper";
 
+import "./MySwiper.css";
 const ProyectsSwiper = ({ children }) => {
   return (
     <Swiper
@@ -20,12 +20,11 @@ const ProyectsSwiper = ({ children }) => {
       navigation={true}
       breakpoints={{
         0: {
-          slidesPerView: 1.1,
+          slidesPerView: 1,
           spaceBetween: 70,
         },
         350: {
           slidesPerView: 1.2,
-
           spaceBetween: 60,
         },
         400: {

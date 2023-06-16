@@ -1,30 +1,42 @@
 [
   {
     "id": 1,
-    "title": "Peliculed",
+    "title": "SpaceX",
     "lenguajes": "React Js",
-    "bgImg": "url('./imgProyect/mockupPeliculed.jpeg')",
-    "to": "https://desafio-react-pi.vercel.app/"
+    "bgImg": "url('./imgProyect/mockupSpaceX.png')",
+    "to": "https://space-x-ruddy.vercel.app/",
+    "github": "https://github.com/FelipeJuaneda/SpaceX"
   },
   {
     "id": 2,
-    "title": "Heladeria Artesanal",
-    "lenguajes": "React Js, Firebase",
-    "bgImg": "url('./imgProyect/mockupHelados.jpeg')",
-    "to": "https://primer-app.vercel.app/"
+    "title": "Peliculed",
+    "lenguajes": "React Js",
+    "bgImg": "url('./imgProyect/mockupPeliculed.jpeg')",
+    "to": "https://desafio-react-pi.vercel.app/",
+    "github": "https://github.com/FelipeJuaneda/desafioReact"
   },
   {
     "id": 3,
-    "title": "Viajes FM",
-    "lenguajes": "Javascript",
-    "bgImg": "url('./imgProyect/mockupViajes.jpeg')",
-    "to": "https://felipejuaneda.github.io/paginaViajes/"
+    "title": "Heladeria Artesanal",
+    "lenguajes": "React Js, Firebase",
+    "bgImg": "url('./imgProyect/mockupHelados.jpeg')",
+    "to": "https://primer-app.vercel.app/",
+    "github": "https://github.com/FelipeJuaneda/primerApp"
   },
   {
     "id": 4,
+    "title": "Viajes FM",
+    "lenguajes": "Javascript",
+    "bgImg": "url('./imgProyect/mockupViajes.jpeg')",
+    "to": "https://felipejuaneda.github.io/paginaViajes/",
+    "github": "https://github.com/FelipeJuaneda/paginaViajes"
+  },
+  {
+    "id": 5,
     "title": "Paseo Colonial",
     "lenguajes": "Javascript",
     "bgImg": "url('./imgProyect/mockupColonial.jpeg')",
-    "to": "https://felipejuaneda.github.io/proyecto-final/"
+    "to": "https://felipejuaneda.github.io/proyecto-final/",
+    "github": "https://github.com/FelipeJuaneda/proyecto-final"
   }
 ]

@@ -28,6 +28,7 @@ const FormContact = () => {
       .then((response) => {
         if (response.status === 200) {
           toastFunction();
+          form.current.reset();
         }
         console.log(response);
       })
@@ -35,13 +36,13 @@ const FormContact = () => {
   };
 
   return (
-    <div ref={form} className="mt-8 lg:w-1/2 lg:mx-6">
+    <div className="mt-8 lg:w-1/2 lg:mx-6">
       <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
         <h1 className="text-2xl font-medium text-gray-700 font-notoFont dark:text-gray-200">
           Enviame un mensaje!
         </h1>
 
-        <form className="mt-6" onSubmit={sendEmail}>
+        <form ref={form} className="mt-6" onSubmit={sendEmail}>
           <div className="flex-1">
             <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
               Nombre
