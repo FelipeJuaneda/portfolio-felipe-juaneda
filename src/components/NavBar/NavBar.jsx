@@ -85,7 +85,7 @@ const Nav = () => {
           ))}
           <a
             href={curriculum}
-            download={"Curriculim Felipe Juaneda"}
+            download={"CV Felipe Juaneda"}
             className="px-6 py-2 text-white duration-500 rounded bg-violetaPrincipal 910:ml-8 hover:bg-violet-600 font-notoFont"
           >
             Descargar Cv
