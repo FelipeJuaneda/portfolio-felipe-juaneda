@@ -48,14 +48,16 @@ const Proyects = () => {
                             <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">
                               {proyect.lenguajes}
                             </p>
-                            <a
-                              href={proyect.github}
+                            <button
+                              onClick={() =>
+                                window.open(proyect.github, "_blank")
+                              }
                               target="_blank"
                               rel="noreferrer"
                               className="absolute bottom-0 text-4xl right-5"
                             >
                               <i className="ri-github-fill" />
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </a>
