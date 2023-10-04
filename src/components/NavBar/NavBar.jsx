@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 import curriculum from "../../images-cv/curriculum.pdf";
 import { animateScroll as scroll } from "react-scroll";
@@ -11,7 +10,6 @@ const Nav = () => {
   const [open, setOpen] = useState(false);
   const [scrollActive, setScrollActive] = useState(false);
   const Links = [
-    { id: 1, name: "Inicio", to: "aboutme", offset: -72 },
     { id: 2, name: "Sobre mi", to: "aboutme", offset: -72 },
     { id: 3, name: "Proyectos", to: "proyects" },
     { id: 4, name: "Contacto", to: "contact" },
@@ -81,7 +79,8 @@ const Nav = () => {
               <LinkScroll
                 to={link.to}
                 activeClass="active"
-                className="navLink text-blackRich dark:text-grisDark hover:border-b-2 hover:border-celestePrincipal"
+                spy={true}
+                className="cursor-pointer navLink text-blackRich dark:text-grisDark hover:border-b-2 hover:border-celestePrincipal"
                 smooth={true}
                 offset={link.offset}
                 onClick={handleCloseClick}
