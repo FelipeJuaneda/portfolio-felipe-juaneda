@@ -1,22 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { SwiperSlide } from "swiper/react";
 import ProyectsSwiper from "../SwiperCarousel/ProyectsSwiper";
+import useData from "../../hook/useData";
 
 const Proyects = () => {
-  const [proyects, setProyects] = useState([]);
-
-  const getProyectsData = async () => {
-    try {
-      const dataProyects = await fetch("/data/proyectsData.json");
-      const dataProyectsJson = await dataProyects.json();
-      setProyects(dataProyectsJson);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    getProyectsData();
-  }, []);
+  const { data } = useData("/data/proyectsData.json");
 
   return (
     <div id="proyects">
@@ -32,8 +20,8 @@ const Proyects = () => {
             </p>
           </div>
           <ProyectsSwiper>
-            {proyects
-              ? proyects.map((proyect) => {
+            {data
+              ? data.map((proyect) => {
                   return (
                     <SwiperSlide key={proyect.id} className="select-none">
                       <a href={proyect.to} target="_blank" rel="noreferrer">
