@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutMe from "./pages/AboutMe/AboutMe";
-import Contact from "./components/Contact/Contact";
+import Contact from "./pages/Contact/Contact";
 import Education from "./components/EduExp/Education/Education";
 import Experience from "./components/EduExp/Experience/Experience";
 import Home from "./pages/Home/Home";
