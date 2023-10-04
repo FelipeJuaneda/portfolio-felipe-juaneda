@@ -1,42 +1,42 @@
 [
   {
-    "id": 1,
-    "title": "SpaceX",
-    "lenguajes": "React Js",
     "bgImg": "url('./imgProyect/mockupSpaceX.png')",
-    "to": "https://space-x-chi-seven.vercel.app/",
-    "github": "https://github.com/FelipeJuaneda/SpaceX"
-  },
-  {
-    "id": 2,
-    "title": "Peliculed",
+    "github": "https://github.com/FelipeJuaneda/SpaceX",
+    "id": 1,
     "lenguajes": "React Js",
+    "title": "SpaceX",
+    "to": "https://space-x-chi-seven.vercel.app/"
+  },
+  {
     "bgImg": "url('./imgProyect/mockupPeliculed.jpeg')",
-    "to": "https://desafio-react-pi.vercel.app/",
-    "github": "https://github.com/FelipeJuaneda/desafioReact"
+    "github": "https://github.com/FelipeJuaneda/desafioReact",
+    "id": 2,
+    "lenguajes": "React Js",
+    "title": "Peliculed",
+    "to": "https://desafio-react-pi.vercel.app/"
   },
   {
-    "id": 3,
-    "title": "Heladeria Artesanal",
-    "lenguajes": "React Js, Firebase",
     "bgImg": "url('./imgProyect/mockupHelados.jpeg')",
-    "to": "https://primer-app.vercel.app/",
-    "github": "https://github.com/FelipeJuaneda/primerApp"
+    "github": "https://github.com/FelipeJuaneda/primerApp",
+    "id": 3,
+    "lenguajes": "React Js, Firebase",
+    "title": "Heladeria Artesanal",
+    "to": "https://primer-app.vercel.app/"
   },
   {
-    "id": 4,
-    "title": "Viajes FM",
-    "lenguajes": "Javascript",
     "bgImg": "url('./imgProyect/mockupViajes.jpeg')",
-    "to": "https://felipejuaneda.github.io/paginaViajes/",
-    "github": "https://github.com/FelipeJuaneda/paginaViajes"
+    "github": "https://github.com/FelipeJuaneda/paginaViajes",
+    "id": 4,
+    "lenguajes": "Javascript",
+    "title": "Viajes FM",
+    "to": "https://felipejuaneda.github.io/paginaViajes/"
   },
   {
-    "id": 5,
-    "title": "Paseo Colonial",
-    "lenguajes": "Javascript",
     "bgImg": "url('./imgProyect/mockupColonial.jpeg')",
-    "to": "https://felipejuaneda.github.io/proyecto-final/",
-    "github": "https://github.com/FelipeJuaneda/proyecto-final"
+    "github": "https://github.com/FelipeJuaneda/proyecto-final",
+    "id": 5,
+    "lenguajes": "Javascript",
+    "title": "Paseo Colonial",
+    "to": "https://felipejuaneda.github.io/proyecto-final/"
   }
 ]

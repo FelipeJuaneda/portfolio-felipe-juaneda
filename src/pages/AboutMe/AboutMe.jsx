@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import fotoFeli from "../../images-cv/felihome.png";
-import Education from "../EduExp/Education/Education";
-import Skills from "../Skills/Skills";
+import Education from "../../components/EduExp/Education/Education";
+import Skills from "../../components/Skills/Skills";
 
 const AboutMe = () => {
   const location = useLocation();

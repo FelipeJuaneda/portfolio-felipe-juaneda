@@ -1,59 +1,56 @@
 [
   {
+    "alt": "logo html",
     "id": 5,
-
-    "name": "HTML",
     "img": "https://i.ibb.co/vPWTpw3/htmlLogo.png",
-    "alt": "logo html"
+    "name": "HTML"
   },
   {
+    "alt": "logo css",
     "id": 6,
-
-    "name": "CSS",
     "img": "https://i.ibb.co/yVhBqLL/cssLogo.png",
-    "alt": "logo css"
+    "name": "CSS"
   },
   {
+    "alt": "logo javascript",
     "id": 7,
-
-    "name": "JavaScript",
     "img": "https://i.ibb.co/TB4tTbM/javascript-Logo.png",
-    "alt": "logo javascript"
+    "name": "JavaScript"
   },
   {
+    "alt": "logo react",
     "id": 8,
-    "name": "React Js",
     "img": "https://i.ibb.co/0cHnn6Z/react-Logo.png",
-    "alt": "logo react"
+    "name": "React Js"
   },
   {
+    "alt": "logo git",
     "id": 9,
-    "name": "GIT",
     "img": "https://i.ibb.co/b1rypLZ/gitLogo.png",
-    "alt": "logo git"
+    "name": "GIT"
   },
   {
+    "alt": "logo github",
     "id": 10,
-    "name": "Github",
     "img": "https://i.ibb.co/2M7gr7z/github-Logo.png",
-    "alt": "logo github"
+    "name": "Github"
   },
   {
+    "alt": "logo firebase",
     "id": 11,
-    "name": "Firebase",
     "img": "https://i.ibb.co/9wzNkcR/firebase-Logo.png",
-    "alt": "logo firebase"
+    "name": "Firebase"
   },
   {
+    "alt": "logo tailwind",
     "id": 12,
-    "name": "Tailwind",
     "img": "https://i.ibb.co/Bts3NGz/tailwind-Logo.png",
-    "alt": "logo tailwind"
+    "name": "Tailwind"
   },
   {
+    "alt": "logo bootstrap",
     "id": 13,
-    "name": "Bootstrap",
     "img": "https://i.ibb.co/23VD0X3/bootstrap-Logo.png",
-    "alt": "logo bootstrap"
+    "name": "Bootstrap"
   }
 ]

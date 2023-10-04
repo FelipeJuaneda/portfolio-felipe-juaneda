@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AboutMe from "./components/AboutMe/AboutMe";
+import AboutMe from "./pages/AboutMe/AboutMe";
 import Contact from "./components/Contact/Contact";
 import Education from "./components/EduExp/Education/Education";
 import Experience from "./components/EduExp/Experience/Experience";
-import Home from "./components/Home/Home";
+import Home from "./pages/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
 import Proyects from "./components/Proyects/Proyects";
 import "./App.css";
