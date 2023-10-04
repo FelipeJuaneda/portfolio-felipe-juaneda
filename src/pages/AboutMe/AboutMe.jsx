@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 import fotoFeli from "../../images-cv/felihome.png";
 import Education from "../../components/EduExp/Education/Education";
 import Skills from "../../components/Skills/Skills";
@@ -6,6 +7,7 @@ import Experience from "../../components/EduExp/Experience/Experience";
 import decoration from "../../images-cv/deco.svg";
 
 const AboutMe = () => {
+  const [listRef] = useAutoAnimate();
   const [showEducation, setShowEducation] = useState(true);
 
   const networks = [
@@ -65,7 +67,7 @@ const AboutMe = () => {
 
         <Skills />
 
-        <div>
+        <div ref={listRef}>
           <div className="flex items-center justify-center gap-3 px-3 md:gap-8 lg:gap-14">
             <button
               onClick={() => handleButtonClick(true)}
