@@ -40,13 +40,14 @@ const Contact = () => {
       to: "mailto:felipejua9@gmail.com",
     },
   ];
+
   const sectionStyle = {
     background:
       "rgb(110, 7, 243) linear-gradient(180deg, rgba(110, 7, 243, 1) 38%, rgba(103, 87, 222, 1) 72%, rgba(91, 233, 185, 1) 100%)",
   };
 
   return (
-    <section className="min-h-screen" style={sectionStyle}>
+    <section className="min-h-screen" id="contact" style={sectionStyle}>
       <div className="container flex flex-col min-h-screen px-6 py-12 mx-auto 550:px-0 550:py-3">
         <div className="flex-1 w-full m-auto lg:flex lg:items-center">
           <div className="text-white lg:w-1/2 lg:mx-6 550:px-6">
@@ -54,7 +55,7 @@ const Contact = () => {
               Contactos!
             </h1>
 
-            <div className="mt-6 space-y-8 md:mt-8">
+            <div className="mt-6 space-y-4 md:mt-8">
               {contacts.map((contact) => (
                 <p key={contact.id} className="flex items-center -mx-2">
                   <i className={contact.iClassName} />
@@ -62,7 +63,7 @@ const Contact = () => {
                     href={contact.to}
                     target="_blank"
                     rel="noreferrer"
-                    className="mx-2 text-white truncate w-72 font-notoFont"
+                    className="mx-2 text-white truncate font-notoFont"
                   >
                     {contact.value}
                   </a>
@@ -77,7 +78,7 @@ const Contact = () => {
                     key={network.id}
                     target="_blank"
                     rel="noreferrer"
-                    className="mx-1.5 text-white transition-colors duration-300 transform hover:text-blue-500"
+                    className="mx-1.5 text-white transition-colors duration-300 hover:text-blue-500"
                     href={network.to}
                   >
                     <i className={`text-3xl fill-current ${network.iclass}`} />

@@ -19,7 +19,7 @@ const Proyects = () => {
   }, []);
 
   return (
-    <div>
+    <div id="proyects">
       <section className="bg-violetaPrincipal ">
         <div className="mx-auto py-14 900:py-10">
           <div className="pb-9">

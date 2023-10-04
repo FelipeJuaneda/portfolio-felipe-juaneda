@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
+    "@formkit/auto-animate": "^0.8.0",
     "@headlessui/react": "^1.7.3",
     "@heroicons/react": "^2.0.11",
     "@testing-library/jest-dom": "^5.16.5",

@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 import curriculum from "../../images-cv/curriculum.pdf";
-import "./NavBar.css";
 import { animateScroll as scroll } from "react-scroll";
 import ScrollProgressBar from "../ScrollProgressBar/ScrollProgressBar";
 import DarkModeButton from "../DarkModeButton/DarkModeButton";
+import "./NavBar.css";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
   const [scrollActive, setScrollActive] = useState(false);
   const Links = [
-    { id: 1, name: "Inicio", link: "/" },
-    { id: 2, name: "Sobre mi", link: "/aboutme" },
-    { id: 3, name: "Proyectos", link: "/proyects" },
-    { id: 4, name: "Contacto", link: "/contact" },
+    { id: 1, name: "Inicio", to: "aboutme", offset: -72 },
+    { id: 2, name: "Sobre mi", to: "aboutme", offset: -72 },
+    { id: 3, name: "Proyectos", to: "proyects" },
+    { id: 4, name: "Contacto", to: "contact" },
   ];
 
   let ubicacionActual = window.pageYOffset;
@@ -28,6 +29,14 @@ const Nav = () => {
     ubicacionActual = desplazamientoActual;
   };
   window.addEventListener("scroll", effectScroll);
+
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
+  const handleCloseClick = () => {
+    setOpen(false);
+  };
 
   return (
     <div
@@ -45,13 +54,13 @@ const Nav = () => {
             className=" cursor-pointer flex items-center font-[Poppins] 
       text-gray-800"
           >
-            <Link to={"/"}>
+            <LinkScroll to="/" onClick={() => scroll.scrollToTop()}>
               <span className="text-lg font-semibold border-b-2 font-notoFont border-celestePrincipal dark:text-grisDark">
                 Felipe Agustin Juaneda
               </span>
-            </Link>
+            </LinkScroll>
           </div>
-          <div onClick={() => setOpen(!open)} className=" 910:hidden">
+          <div onClick={handleToggle} className=" 910:hidden">
             <i
               className="text-2xl ri-menu-3-line dark:text-grisDark"
               name={open ? "close" : "menu"}
@@ -69,18 +78,16 @@ const Nav = () => {
               key={link.id}
               className="text-base 910:ml-6 910:my-0 my-7 900:text-base"
             >
-              <NavLink
-                to={link.link}
-                onClick={() => {
-                  setOpen(false);
-                  scroll.scrollToTop();
-                }}
-                activeclassname="active"
-                className="navLink text-blackRich dark:text-grisDark hover:border-b-2 hover:border-celestePrincipal "
-                end
+              <LinkScroll
+                to={link.to}
+                activeClass="active"
+                className="navLink text-blackRich dark:text-grisDark hover:border-b-2 hover:border-celestePrincipal"
+                smooth={true}
+                offset={link.offset}
+                onClick={handleCloseClick}
               >
                 {link.name}
-              </NavLink>
+              </LinkScroll>
             </li>
           ))}
           <a
