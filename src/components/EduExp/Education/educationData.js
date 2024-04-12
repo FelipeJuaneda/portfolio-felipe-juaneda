@@ -39,8 +39,9 @@ const infoEdu = [
       "w-full h-[228px] px-4 py-4 mt-2 sm:mt-5  rounded-lg shadow-lg lg:w-[30%] xl:mt-24 bg-gray-800",
     logo: "https://i.ibb.co/vPWTpw3/htmlLogo.png",
     title: "BackEnd",
-    description: "Curso de BackEnd en proceso...",
-    duration: "jul. 2022 - act.",
+    description:
+      "Curso de BackEnd terminado en CoderHouse con calificacion de 10",
+    duration: "jul. 2022 - dic. 2022",
   },
 ];
 

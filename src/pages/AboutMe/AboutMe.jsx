@@ -32,6 +32,18 @@ const AboutMe = () => {
     setShowEducation(showEducation);
   };
 
+  const calculateAge = (birthdate) => {
+    const today = new Date();
+    const birthDate = new Date(birthdate);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const month = today.getMonth() - birthDate.getMonth();
+    if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  };
+  const edad = calculateAge("2001-03-20");
+
   return (
     <main id="aboutme" className="dark:bg-blackRich">
       <div className="p-0 py-10 text-center bg-white sm:p-10 dark:bg-blackRich">
@@ -42,10 +54,10 @@ const AboutMe = () => {
           Desarrollador FrontEnd
         </h2>
         <p className="max-w-xl py-5 mx-auto leading-8 text-blackRich dark:text-white text-md md:text-xl font-notoFont">
-          Soy Felipe Agustín Juaneda, de 22 años, Argentino residente en
-          Córdoba. Actualmente estudiando Programación Full Stack 👨‍🎓, trabajando
-          de Tutor en CoderHouse, y creciendo en este mundo tecnológico que
-          tanto me apasiona.
+          Soy Felipe Agustín Juaneda, de {edad} años, Argentino residente en
+          Córdoba. Actualmente programador Full Stack 👨‍🎓 especializado en Front
+          End. Creciendo dia a dia en este mundo tecnológico que tanto me
+          apasiona.
         </p>
         <div className="flex justify-center gap-16 py-3 text-5xl text-gray-600">
           {networks.map((network) => (
