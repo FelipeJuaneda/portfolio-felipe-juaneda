@@ -51,7 +51,7 @@ const AboutMe = () => {
           Felipe Juaneda
         </h1>
         <h2 className="py-2 text-2xl text-blackRich md:text-3xl dark:text-white">
-          Desarrollador FrontEnd
+          Desarrollador Full Stack
         </h2>
         <p className="max-w-xl py-5 mx-auto leading-8 text-blackRich dark:text-white text-md md:text-xl font-notoFont">
           Soy Felipe Agustín Juaneda, de {edad} años, Argentino residente en
