@@ -10,7 +10,7 @@ const infoExp = [
 
     duration: "ago. 2022 - act.",
     subtitle: "Coderhouse · Jornada parcial",
-    order: 2,
+    order: 1,
   },
   {
     id: 2,
@@ -19,12 +19,12 @@ const infoExp = [
     title: "Programador full stack",
     classNameFather:
       "w-full h-full mt-6 px-4 py-4 bg-gray-800 rounded-lg shadow-lg lg:w-1/2 ",
-    description: `Trabajo en estrecha colaboración con el equipo de diseño y desarrollo para implementar funcionalidades clave y mejorar la usabilidad de la aplicación, de una empresa que ofrece envíos de paquetería. 
-    Mi objetivo es asegurar que los usuarios puedan navegar fácilmente por la plataforma, realizar seguimiento de envíos y gestionar sus operaciones logísticas de manera eficiente.`,
+    description: `En el puesto desarrollé y optimicé proyectos para una empresa multinacional de logística que opera en toda Europa. 
+Trabajo con un stack tecnológico que incluye Angular, Node.js, PostgreSQL, AWS y GitLab. Actualmente, estoy enfocado en implementar soluciones de inteligencia artificial para mejorar el servicio al cliente.`,
 
-    duration: "mar. 2024 - act.",
-    subtitle: "Outside The Box · Jornada parcial",
-    order: 1,
+    duration: "mar. 2024 - jun. 2024",
+    subtitle: "Outside The Box · Contrato temporal",
+    order: 2,
   },
   {
     id: 3,

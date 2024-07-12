@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-import fotoFeli from "../../images-cv/felihome.png";
+import fotoFeli from "../../assets/felihome.png";
 import Education from "../../components/EduExp/Education/Education";
 import Skills from "../../components/Skills/Skills";
 import Experience from "../../components/EduExp/Experience/Experience";
-import decoration from "../../images-cv/deco.svg";
+import decoration from "../../assets/deco.svg";
 
 const AboutMe = () => {
   const [listRef] = useAutoAnimate();

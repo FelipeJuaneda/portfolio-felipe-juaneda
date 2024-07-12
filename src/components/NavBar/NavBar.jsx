@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link as LinkScroll } from "react-scroll";
-import curriculum from "../../images-cv/curriculum.pdf";
+import curriculum from "../../assets/cv/curriculum.pdf";
 import { animateScroll as scroll } from "react-scroll";
 import ScrollProgressBar from "../ScrollProgressBar/ScrollProgressBar";
 import DarkModeButton from "../DarkModeButton/DarkModeButton";

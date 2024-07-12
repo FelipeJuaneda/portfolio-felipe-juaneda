@@ -1,0 +1,9 @@
+.education-swiper .swiper-button-next,
+.education-swiper .swiper-button-prev {
+  color: #6e07f3;
+}
+
+.education-swiper .swiper-pagination-bullet {
+  background: #6e07f3;
+  margin-top: 10px;
+}

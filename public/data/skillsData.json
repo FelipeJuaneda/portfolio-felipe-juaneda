@@ -24,10 +24,47 @@
     "name": "React Js"
   },
   {
+    "alt": "logo next js",
+    "id": 16,
+    "img": "https://i.ibb.co/tZxt0hC/next-js-logo-8-FCFF51-DD2-seeklogo-com.png",
+    "name": "Next Js"
+  },
+  {
+    "alt": "logo Node Js",
+    "id": 14,
+    "img": "https://i.ibb.co/vBCDgfY/node-js-icon-454x512-nztofx17.png",
+    "name": "Node Js"
+  },
+  {
+    "alt": "logo mongo db",
+    "id": 19,
+    "img": "https://i.ibb.co/Y82mVxQ/01159bc9b0bc4ba22f834d06d4974230.png",
+    "name": "Mongo DB"
+  },
+  {
+    "alt": "logo express",
+    "id": 15,
+    "img": "https://i.ibb.co/GRQNFVK/express.png",
+    "name": "Express"
+  },
+  {
+    "alt": "logo sql",
+    "id": 17,
+    "img": "https://i.ibb.co/PMTRCzN/Imagen1.png",
+    "name": "SQL"
+  },
+
+  {
     "alt": "logo git",
     "id": 9,
     "img": "https://i.ibb.co/b1rypLZ/gitLogo.png",
     "name": "GIT"
+  },
+  {
+    "alt": "logo postman",
+    "id": 18,
+    "img": "https://i.ibb.co/SR1x616/2945092.webp",
+    "name": "Postman"
   },
   {
     "alt": "logo github",
