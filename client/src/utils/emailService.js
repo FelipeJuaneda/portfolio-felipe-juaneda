@@ -2,11 +2,15 @@ import axios from "axios";
 
 const sendEmail = async (data) => {
   try {
-    const response = await axios.post("http://localhost:5000/api/send", data, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await axios.post(
+      "https://portfolio-felipe-juaneda-api.vercel.app/api/send",
+      data,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     return response.data;
   } catch (error) {
     if (error.response) {
