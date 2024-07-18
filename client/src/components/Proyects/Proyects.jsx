@@ -16,7 +16,7 @@ const Proyects = () => {
             </h1>
 
             <p className="mt-4 text-center text-white ">
-              Algunos de mis proyectos que mas me gustan! Click para entrar!😉
+              ¡Algunos de mis proyectos que mas me gustan!
             </p>
           </div>
           <ProyectsSwiper>

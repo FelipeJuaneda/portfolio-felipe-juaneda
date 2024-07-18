@@ -8,7 +8,7 @@ const Skills = () => {
 
   return (
     <div className="py-20">
-      <div className="mb-5 text-center">
+      <div className="text-center mb-11">
         <span className="text-3xl font-semibold border-b-2 dark:text-white text-blackRich md:text-3xl font-notoFont border-celestePrincipal">
           Skills
         </span>

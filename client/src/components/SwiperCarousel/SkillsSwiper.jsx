@@ -3,19 +3,23 @@ import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
-import { Autoplay, Navigation } from "swiper";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper";
+import "./SkillsSwiper.css";
 
 const SkillsSwiper = ({ children }) => {
   return (
     <Swiper
-      slidesPerGroup={9}
+      slidesPerGroup={1}
+      loop={true}
       allowTouchMove={false}
       autoplay={{
-        delay: 500,
+        delay: 1,
         disableOnInteraction: false,
+        reverseDirection: false,
       }}
-      speed={7000}
-      modules={[Navigation, Autoplay]}
+      speed={1700}
+      modules={[Autoplay]}
       navigation={false}
       breakpoints={{
         0: {
@@ -47,6 +51,7 @@ const SkillsSwiper = ({ children }) => {
           spaceBetween: 20,
         },
       }}
+      className="skills-swiper"
     >
       {children}
     </Swiper>

@@ -1,23 +1,47 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Directorios de Node.js
+node_modules/
+.cache/
+.yarn/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Archivos de configuración
+package-lock.json
+npm-shrinkwrap.json
+yarn.lock
 
-# testing
-/coverage
+# Archivos de entorno
+.env*
+.env.production
+.env.development
 
-# production
-/build
+# Archivos de logs
+logs/
+*.log
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Archivos de prueba
+test/
+*.spec.js
+*.spec.jsx
+*.test.js
+*.test.jsx
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Archivos de desarrollo
+webpack.config.js
+webpack.dev.js
+webpack.prod.js
+
+# Archivos de compilación
+dist/
+build/
+
+# Archivos de caché del navegador
+# (Si usas un preprocesador como Sass o Less)
+.sass-cache/
+.less-cache/
+
+# Archivos IDE
+*.iml
+*.idea/
+.vscode/
+
+# Archivos temporales
+tmp/

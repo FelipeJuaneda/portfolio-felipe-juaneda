@@ -4,15 +4,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import infoExp from "./experienceData";
-import "../Education/Education.css";
+import infoEdu from "./educationData";
+import "./Education.css";
 
-const Experience = () => {
-  const sortedInfoExp = infoExp.sort((a, b) => a.order - b.order);
+const Education = () => {
   return (
-    <div className="mt-9">
-      <span className="text-4xl font-medium border-b-2 text-blackRich dark:text-white border-celestePrincipal">
-        Experiencia
+    <div className="my-9">
+      <span className="text-4xl font-medium border-b-2 text-blackRich border-celestePrincipal dark:text-white">
+        Educación
       </span>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -31,12 +30,15 @@ const Experience = () => {
           1024: {
             slidesPerView: 3.4,
           },
+          1450: {
+            slidesPerView: 4,
+          },
         }}
-        className={`mt-7 education-swiper`}
+        className="mt-10 education-swiper"
       >
-        {sortedInfoExp.map((data) => (
+        {infoEdu.map((data) => (
           <SwiperSlide key={data.id} className="flex justify-center">
-            <div className="flex flex-col items-center w-full max-w-sm p-6 text-center bg-gray-800 rounded-lg shadow-lg h-96">
+            <div className="flex flex-col items-center w-full max-w-sm p-6 text-center bg-gray-800 rounded-lg shadow-lg h-640">
               <a
                 href={data.link}
                 target="_blank"
@@ -52,8 +54,7 @@ const Experience = () => {
                   {data.title}
                 </h3>
                 <h4 className="text-gray-400">{data.duration}</h4>
-                <h5 className="text-gray-400">{data.subtitle}</h5>
-                <p className="py-4 overflow-hidden text-white text-md font-notoFont 768:text-sm text-ellipsis">
+                <p className="py-4 text-white text-md font-notoFont">
                   {data.description}
                 </p>
               </a>
@@ -65,4 +66,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;
