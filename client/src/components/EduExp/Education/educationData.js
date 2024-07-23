@@ -28,7 +28,7 @@ const infoEdu = [
   },
   {
     id: 4,
-    link: "",
+    link: "https://www.linkedin.com/in/felipejuaneda/",
     logo: "https://i.ibb.co/2Zm2sS1/node-js-icon-1817x2048-g8tzf91e.png",
     title: "BackEnd",
     description:
