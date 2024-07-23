@@ -9,7 +9,7 @@ import "./Education.css";
 
 const Education = () => {
   return (
-    <div className="my-9">
+    <div className="mt-9">
       <span className="text-4xl font-medium border-b-2 text-blackRich border-celestePrincipal dark:text-white">
         Educación
       </span>
@@ -25,12 +25,15 @@ const Education = () => {
             slidesPerView: 1.5,
           },
           768: {
-            slidesPerView: 2.2,
+            slidesPerView: 1.8,
           },
           1024: {
-            slidesPerView: 3.4,
+            slidesPerView: 2.6,
           },
           1450: {
+            slidesPerView: 3.7,
+          },
+          1500: {
             slidesPerView: 4,
           },
         }}
@@ -38,26 +41,46 @@ const Education = () => {
       >
         {infoEdu.map((data) => (
           <SwiperSlide key={data.id} className="flex justify-center">
-            <div className="flex flex-col items-center w-full max-w-sm p-6 text-center bg-gray-800 rounded-lg shadow-lg h-640">
-              <a
-                href={data.link}
-                target="_blank"
-                rel="noreferrer"
-                className="flex flex-col items-center w-full h-full"
-              >
-                <div className="flex-shrink-0 mb-4">
-                  <div className="flex items-center justify-center w-12 h-12 mx-auto text-white rounded-md">
-                    <img src={data.logo} alt={`Logo de ${data.title}`} />
+            <div className="flex flex-col w-full max-w-md  p-6 bg-gray-800 rounded-lg shadow-lg h-[22rem]">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex items-center justify-center w-12 bg-gray-700 rounded-md aspect-square">
+                  <img
+                    src={data.logo}
+                    alt={`Logo de ${data.title}`}
+                    className="object-contain w-10 h-10"
+                  />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <div className="text-base text-gray-400 md:text-md lg:text-lg text-start">
+                    {data.title}
+                  </div>
+                  <div className="text-sm text-gray-400 text-start">
+                    {data.duration}
                   </div>
                 </div>
-                <h3 className="pt-4 text-2xl font-semibold text-white sm:text-xl font-notoFont">
-                  {data.title}
-                </h3>
-                <h4 className="text-gray-400">{data.duration}</h4>
-                <p className="py-4 text-white text-md font-notoFont">
+              </div>
+              <div className="flex flex-col flex-grow gap-2">
+                <p
+                  className="overflow-hidden text-gray-400 overflow-ellipsis text-start"
+                  style={{
+                    display: "-webkit-box",
+                    WebkitLineClamp: 8,
+                    WebkitBoxOrient: "vertical",
+                    height: "190px",
+                  }}
+                >
                   {data.description}
                 </p>
-              </a>
+                <a
+                  href={data.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="gap-2 mt-auto font-medium text-blue-500 text-start hover:underline"
+                >
+                  <i className="text-sm ri-link" />
+                  <span className="ml-1 text-sm">Ver Certificado</span>
+                </a>
+              </div>
             </div>
           </SwiperSlide>
         ))}
