@@ -6,7 +6,7 @@ const Contact = () => {
     {
       id: 1,
       iclass: "ri-linkedin-fill",
-      to: "https://www.linkedin.com/in/felipe-juaneda-8b7103190/",
+      to: "https://www.linkedin.com/in/felipejuaneda/",
     },
     {
       id: 2,
@@ -24,8 +24,8 @@ const Contact = () => {
     {
       id: "direc",
       iClassName: "mx-2 text-2xl text-white ri-map-pin-line",
-      value: "Belgrano 773, Córdoba, Argentina",
-      to: "https://www.google.com/maps/place/Belgrano+773,+C%C3%B3rdoba/@-31.4238735,-64.1919614,17z/data=!3m1!4b1!4m5!3m4!1s0x9432a28633a360b5:0x941372e4f44cc230!8m2!3d-31.4238735!4d-64.1919614",
+      value: "Córdoba, Argentina",
+      to: "https://maps.app.goo.gl/iqJDdu7QMdeDwZCn9",
     },
     {
       id: "number",
