@@ -1,15 +1,10 @@
-import React, { useState } from "react";
-import { useAutoAnimate } from "@formkit/auto-animate/react";
+import React from "react";
 import fotoFeli from "../../assets/felihome.png";
-import Education from "../../components/EduExp/Education/Education";
 import Skills from "../../components/Skills/Skills";
-import Experience from "../../components/EduExp/Experience/Experience";
 import decoration from "../../assets/deco.svg";
+import EduExpTimeline from "../../components/EduExp/EduExpTimeline";
 
 const AboutMe = () => {
-  const [listRef] = useAutoAnimate();
-  const [showEducation, setShowEducation] = useState(true);
-
   const networks = [
     {
       id: 1,
@@ -27,10 +22,6 @@ const AboutMe = () => {
       url: "https://github.com/FelipeJuaneda",
     },
   ];
-
-  const handleButtonClick = (showEducation) => {
-    setShowEducation(showEducation);
-  };
 
   const calculateAge = (birthdate) => {
     const today = new Date();
@@ -79,23 +70,7 @@ const AboutMe = () => {
 
         <Skills />
 
-        <div ref={listRef}>
-          <div className="flex items-center justify-center gap-3 px-3 md:gap-8 lg:gap-14">
-            <button
-              onClick={() => handleButtonClick(true)}
-              className="px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in rounded-lg shadow-md bg-violetaPrincipal w-96 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
-            >
-              Educación
-            </button>
-            <button
-              onClick={() => handleButtonClick(false)}
-              className="px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in rounded-lg shadow-md bg-violetaPrincipal w-96 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
-            >
-              Experiencia
-            </button>
-          </div>
-          {showEducation ? <Education /> : <Experience />}
-        </div>
+        <EduExpTimeline />
       </div>
       <div className="w-2/3 pt-5 m-auto 580:w-11/12">
         <img src={decoration} alt="Decoración" />

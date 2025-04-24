@@ -5,24 +5,27 @@ import Contact from "./pages/Contact/Contact";
 import NavBar from "./components/NavBar/NavBar";
 import Proyects from "./components/Proyects/Proyects";
 import "./App.css";
+import { DarkModeProvider } from "./context/DarkModeContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <AboutMe />
-              <Proyects />
-              <Contact />
-            </>
-          }
-        />
-      </Routes>
-    </BrowserRouter>
+    <DarkModeProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <AboutMe />
+                <Proyects />
+                <Contact />
+              </>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+    </DarkModeProvider>
   );
 }
 

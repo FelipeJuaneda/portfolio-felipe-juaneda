@@ -23,7 +23,7 @@ module.exports = {
         '550': { 'raw': '(max-width: 550px)' },
         '450': { 'raw': '(max-width: 450px)' },
         '768Min':{'raw': '(min-width: 768px)'},
-
+        '1170': { 'raw': '(max-width: 1170px)' },
       }
     },
     fontFamily: {

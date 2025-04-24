@@ -1,25 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useDarkMode } from "../../context/DarkModeContext";
 
 const DarkModeButton = () => {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "dark";
-  });
-
-  useEffect(() => {
-    const root = document.documentElement;
-
-    if (theme === "dark") {
-      root.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-  };
+  const { theme, toggleTheme } = useDarkMode();
 
   return (
     <button

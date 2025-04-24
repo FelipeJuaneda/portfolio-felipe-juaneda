@@ -16,6 +16,7 @@
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.7",
+    "react-vertical-timeline-component": "^3.5.3",
     "remixicon": "^2.5.0",
     "sonner": "^1.5.0",
     "swiper": "^8.4.2",
