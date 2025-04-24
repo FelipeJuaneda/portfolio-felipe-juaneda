@@ -1,5 +1,13 @@
 [
   {
+    "bgImg": "url('./imgProyect/mockupGrayola.png')",
+    "github": "https://github.com/FelipeJuaneda/grayola-app",
+    "id": 6,
+    "lenguajes": "Next Js, Supabase, ShadCN UI, Framer Motion",
+    "title": "Grayola App",
+    "to": "https://grayola-app.vercel.app/"
+  },
+  {
     "bgImg": "url('./imgProyect/mockupPrompt.png')",
     "github": "https://github.com/FelipeJuaneda/",
     "id": 6,
